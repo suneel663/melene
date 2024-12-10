@@ -1,0 +1,79 @@
+.heading {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.6px;
+}
+.contact-form {
+  padding-right: 72px;
+  margin-right: 72px;
+  border-right: 1px solid #0f0f0f0d;
+}
+.input-field {
+  width: 100%;
+  padding-inline: 16px;
+  padding-block: 22px;
+  outline: none;
+  border: 1px solid #0f0f0f33;
+  color: #0f0f0f66;
+}
+.input-field::placeholder {
+  color: #0f0f0f66;
+}
+textarea {
+  min-height: 240px;
+}
+.captcha-container {
+  width: 60%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f0f0f1a;
+  cursor: pointer;
+}
+.captcha-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.captcha-label > input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  accent-color: #0f0f0f1a;
+}
+.captcha-container > img {
+  width: 56px;
+}
+.send-button {
+  width: 200px;
+  padding-block: 22px;
+  background-color: black;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.description {
+  margin-block: 16px 40px;
+  color: #0f0f0fa6;
+}
+.contact-info {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.title {
+  color: #0f0f0f66;
+  font-size: 14px;
+  line-height: 16.45px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.contact {
+  color: #0f0f0fbf;
+  font-size: 22px;
+  line-height: 25.85px;
+}

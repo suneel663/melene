@@ -1,0 +1,47 @@
+.product-banner {
+  width: 100%;
+  height: 768px;
+}
+.product-banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.divider-x {
+  height: 94px;
+  width: 1px;
+  background-color: #0f0f0f1a;
+}
+
+.project-info {
+  padding-block: 40px;
+  border-bottom: 1px solid #0f0f0f1a;
+}
+.product-grid {
+  margin-top: 80px;
+}
+.span-down {
+  margin-top: 80px;
+}
+.item {
+  width: 100%;
+  height: 640px;
+  background-color: #0f0f0f1a;
+  margin-top: 32px;
+}
+.divider-y {
+  margin-block: 80px;
+  width: 100%;
+  height: 1px;
+  background-color: #0f0f0f1a;
+}
+.list {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 16px 8px;
+}
+.list > li{
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}

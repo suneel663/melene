@@ -1,0 +1,182 @@
+/* Projects page specific styles */
+.page-template-projects {
+  /* Tab styles specific to projects page */
+  .tab-bar {
+    margin: 56px auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #0f0f0f1a;
+  }
+
+  .tab-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    color: #0f0f0fa6;
+  }
+
+  .tab-item {
+    display: inline-block;
+    cursor: pointer;
+    padding: 14px 24px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+
+  /* Tab states */
+  #one:checked ~ .tab-bar #one-tab,
+  #two:checked ~ .tab-bar #two-tab,
+  #three:checked ~ .tab-bar #three-tab,
+  #four:checked ~ .tab-bar #four-tab,
+  #five:checked ~ .tab-bar #five-tab {
+    background-color: #0f0f0f;
+    color: #ffffff;
+  }
+
+  .tab-container {
+    display: none;
+    animation: fadein 0.8s;
+  }
+
+  /* Tab content styles */
+  .panels {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 64px;
+  }
+
+  .tab-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 62px;
+  }
+
+  .tab-grid-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-grid-item > img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 16px;
+  }
+
+  .tab-grid-item > a {
+    font-size: 22px;
+    line-height: 25.85px;
+    text-align: center;
+  }
+
+  .tab-button {
+    margin-top: 56px;
+    text-align: center;
+  }
+
+  .tab-button a {
+    padding: 20px 64px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  /* Project page specific heading styles */
+  .services-heading {
+    width: 60%;
+    margin: 24px auto 0;
+  }
+}
+
+/* Collage/Gallery section */
+.collage-container {
+  margin-top: 72px;
+  min-height: 800px;
+}
+
+.collage-container .item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 250px;
+  background: #fafafa;
+}
+
+.collage-container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.collage-container .item:hover img {
+  transform: scale(1.05);
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.col-span-1 {
+  grid-column: span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.row-span-1 {
+  grid-row: span 1;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .sm-block {
+    display: block;
+  }
+  
+  .collage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: auto;
+  }
+  
+  .collage-container .item {
+    min-height: 200px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
